@@ -1,18 +1,14 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using Mirror;
 using UnityEngine.AI;
-using UnityEngine.InputSystem;
 
 public class UnitMovement : NetworkBehaviour
 {
     [SerializeField] private NavMeshAgent agent = null;
-    private Camera mainCamera;
 
     #region Server
 
-    [Command] private void CmdMove(Vector3 position)
+    [Command] public void CmdMove(Vector3 position)
     {
         if (!NavMesh.SamplePosition(position, out NavMeshHit hit, 1f, NavMesh.AllAreas)) { return; }
         agent.SetDestination(hit.position);
@@ -20,6 +16,7 @@ public class UnitMovement : NetworkBehaviour
 
     #endregion
 
+    /*
     #region Client
 
     public override void OnStartAuthority()
@@ -41,5 +38,5 @@ public class UnitMovement : NetworkBehaviour
         CmdMove(hit.point);
     }
 
-    #endregion
+    #endregion*/
 }
