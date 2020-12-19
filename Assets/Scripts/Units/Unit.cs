@@ -67,9 +67,9 @@ public class Unit : NetworkBehaviour
         onDeselected?.Invoke();
     }
 
-    public override void OnStartClient()
+    public override void OnStartAuthority()
     {
-        if (!isClientOnly || !hasAuthority) { return; }
+        if (!hasAuthority) { return; }
         AuthorityOnUnitSpawned?.Invoke(this);
     }
 
