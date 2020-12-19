@@ -108,6 +108,7 @@ MonoBehaviour:
   spawnPrefabs:
   - {fileID: 6104355635200097680, guid: 05fea0042237a7b448206ebd83e7f8dc, type: 3}
   - {fileID: 7899959871361385721, guid: f92accc76fbbb764b83a8b189a0ff4a1, type: 3}
+  - {fileID: 1451255583116220880, guid: efb2389a1b8da7e4899981d26220d8e7, type: 3}
   unitSpawnerPrefab: {fileID: 7899959871361385721, guid: f92accc76fbbb764b83a8b189a0ff4a1, type: 3}
 --- !u!114 &8959667567453732941
 MonoBehaviour:
