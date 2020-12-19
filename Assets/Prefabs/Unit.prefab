@@ -283,7 +283,7 @@ MonoBehaviour:
   projectileSpawnPoint: {fileID: 4316109849187814517}
   fireRange: 11
   fireRate: 1
-  rotationSpeed: 20
+  rotationSpeed: 180
 --- !u!1 &6721712883827379651
 GameObject:
   m_ObjectHideFlags: 0
