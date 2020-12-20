@@ -14,8 +14,8 @@ public class UnitSelectionHandler : MonoBehaviour
     private Vector2 startPos;
     public List<Unit> SelectedUnits { get; } = new List<Unit>();
 
-    [SerializeField] private LayerMask layerMask = new LayerMask();
     [SerializeField] private RectTransform unitSelectionArea = null;
+    [SerializeField] private LayerMask layerMask = new LayerMask();
 
 
     private void Start()
