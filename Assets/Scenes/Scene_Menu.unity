@@ -270,22 +270,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: NetworkManager
       objectReference: {fileID: 0}
-    - target: {fileID: 8959667567453732943, guid: 68e3b21113373fc44a46eb5ca0f5bb45, type: 3}
-      propertyPath: onlineScene
-      value: Assets/Scenes/Scene_Map01.unity
-      objectReference: {fileID: 0}
-    - target: {fileID: 8959667567453732943, guid: 68e3b21113373fc44a46eb5ca0f5bb45, type: 3}
-      propertyPath: offlineScene
-      value: Assets/Scenes/Scene_Menu.unity
-      objectReference: {fileID: 0}
-    - target: {fileID: 8959667567453732943, guid: 68e3b21113373fc44a46eb5ca0f5bb45, type: 3}
-      propertyPath: spawnPrefabs.Array.size
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 8959667567453732943, guid: 68e3b21113373fc44a46eb5ca0f5bb45, type: 3}
-      propertyPath: spawnPrefabs.Array.data[3]
-      value: 
-      objectReference: {fileID: 8264518731117559846, guid: b67abd0561f2ec44cbf8ce655a799367, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 68e3b21113373fc44a46eb5ca0f5bb45, type: 3}
 --- !u!1 &1550241648

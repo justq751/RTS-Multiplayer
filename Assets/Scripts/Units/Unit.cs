@@ -76,7 +76,7 @@ public class Unit : NetworkBehaviour
     public override void OnStopClient()
     {
         if (!isClientOnly || !hasAuthority) { return; }
-        AuthorityOnUnitDespawned(this);
+        AuthorityOnUnitDespawned?.Invoke(this);
     }
 
     #endregion
