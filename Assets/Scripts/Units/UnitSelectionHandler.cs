@@ -35,6 +35,7 @@ public class UnitSelectionHandler : MonoBehaviour
         {
             player = NetworkClient.connection.identity.GetComponent<RTSPlayer>();
         }
+
         if (Mouse.current.leftButton.wasPressedThisFrame)
         {
             StartSelectionArea();
