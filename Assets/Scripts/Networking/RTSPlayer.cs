@@ -31,6 +31,12 @@ public class RTSPlayer : NetworkBehaviour
         return resourses;
     }
 
+    [Server]
+    public void SetResources(int newResources)
+    {
+        resourses = newResources;
+    }
+
     #region Server
     public override void OnStartServer()
     {
