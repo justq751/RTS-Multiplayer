@@ -1,18 +1,23 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Mirror;
 
-public class ResourceGenerator : MonoBehaviour
+public class ResourceGenerator : NetworkBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    [SerializeField] private Health health = null;
+    [SerializeField] private int resourcesPerInterval = 10;
+    [SerializeField] private float interval = 2f;
 
-    // Update is called once per frame
-    void Update()
+    private float timer;
+    private RTSPlayer player;
+
+    public override void OnStartServer()
     {
-        
+        timer = interval;
+        player = connectionToClient.identity.GetComponent<RTSPlayer>();
+
+        //health.ServerOnDie += ServerHandleDie;
+        //GameOverHandler.ServerOnGameOver
     }
 }
